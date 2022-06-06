@@ -36,6 +36,10 @@ body {
   width: 32rem
 }
 
+.kuromi-2, .kuromi-3 {
+  display: none;
+}
+
 .boxData {
   text-align: center;
 }

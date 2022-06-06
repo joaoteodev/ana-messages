@@ -2,7 +2,9 @@ const inputName = document.querySelector(".inputName");
 const buttonStart = document.querySelector(".buttonStart");
 const mainTitle = document.querySelector(".mainTitle");
 const subTitle = document.querySelector(".subTitle");
-const kuromi = document.querySelector(".kuromi");
+const kuromi1 = document.querySelector(".kuromi-1");
+const kuromi2 = document.querySelector(".kuromi-2");
+const kuromi3 = document.querySelector(".kuromi-3");
 const boxImages = document.querySelector(".boxImages");
 const images = document.querySelectorAll(".imgScreenshot");
 
@@ -25,7 +27,8 @@ function updateScreen() {
   buttonStart.style.display = "none";
   subTitle.style.display = "none";
   mainTitle.textContent = "I like you more than I can describe...";
-  kuromi.setAttribute("src", "../images/kuromi-2.png");
+  kuromi1.style.display = "none";
+  kuromi2.style.display = "block";
 
   setTimeout(() => {
     boxImages.style.top = 0;
@@ -44,7 +47,9 @@ function handleInput(e) {
       inputName.style.cursor = "not-allowed";
       buttonStart.style.cursor = "not-allowed";
       mainTitle.textContent = "Get out of this site right now!!!".toUpperCase();
-      kuromi.setAttribute("src", "../images/kuromi-3.png");
+      kuromi1.style.display = "none";
+      kuromi3.style.display = "block";
+
       return false;
     }
 
