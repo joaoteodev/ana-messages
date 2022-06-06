@@ -25,7 +25,7 @@ function updateScreen() {
   buttonStart.style.display = "none";
   subTitle.style.display = "none";
   mainTitle.textContent = "I like you more than I can describe...";
-  kuromi.setAttribute("src", "/assets/images/kuromi-2.png");
+  kuromi.setAttribute("src", "../images/kuromi-2.png");
 
   setTimeout(() => {
     boxImages.style.top = 0;
@@ -44,7 +44,7 @@ function handleInput(e) {
       inputName.style.cursor = "not-allowed";
       buttonStart.style.cursor = "not-allowed";
       mainTitle.textContent = "Get out of this site right now!!!".toUpperCase();
-      kuromi.setAttribute("src", "/assets/images/kuromi-3.png");
+      kuromi.setAttribute("src", "../images/kuromi-3.png");
       return false;
     }
 
