@@ -41,7 +41,7 @@ function updateScreen() {
 function handleInput(e) {
   if (e.key == "Enter") {
     if (attempts == 2) {
-      alert("Você não deveria estar acessando esse site!!!");
+      alert("you shouldn't be accessing this site!!!".toUpperCase());
       inputName.disabled = true;
       buttonStart.disabled = true;
       inputName.style.cursor = "not-allowed";
